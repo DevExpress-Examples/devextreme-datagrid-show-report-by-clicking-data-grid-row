@@ -4,11 +4,7 @@
 
 <h2>Home</h2>
 <script>
-    function OnRowClick(e) {
-        //window.location.href = "/Home/Viewer?paramData=" + JSON.stringify({
-        //    reportName: "SampleReport",
-        //    orderId = e.data.OrderID,
-        //    orderDate = e.data.OrderDate});
+    function OnRowClick(e) {        
         var myparams = JSON.stringify({
             reportName: "SampleReport",
             orderId: e.data.OrderID,
