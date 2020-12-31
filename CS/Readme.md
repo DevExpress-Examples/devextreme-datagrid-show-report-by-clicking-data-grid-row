@@ -1,3 +1,0 @@
-# Web Reporting - How to show a Report by clicking a Data Grid row
-
-The example shows how to click a [DataGrid](https://js.devexpress.com/Demos/Widgetsgallery/Demo/DataGrid/Overview/NetCore/Light/) row and display the [Document Viewer](https://docs.devexpress.com/XtraReports/400248/web-reporting/asp-net-core-reporting/document-viewer) with a [Report](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport). 
