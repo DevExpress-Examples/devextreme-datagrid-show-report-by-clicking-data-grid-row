@@ -1,0 +1,46 @@
+﻿@using dxSampleDataGridAndReport.Models
+@using dxSampleDataGridAndReport
+@using Newtonsoft.Json;
+
+<link rel="stylesheet" href="~/css/viewer.part.bundle.css" />
+<script src="~/js/viewer.part.bundle.js"></script>
+
+<h2>Home</h2>
+<script>
+    function onRowClick(e) {
+        var dataGrid = e.component;       
+        if (e.isExpanded) {
+            dataGrid.collapseRow(e.key);
+        } else {
+            dataGrid.collapseAll(-1);
+            dataGrid.expandRow(e.key);
+        }
+    }
+</script>
+
+@(Html.DevExtreme().DataGrid<SampleOrder>()
+    .ShowBorders(true)
+    .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
+    .Columns(columns => {
+        columns.AddFor(m => m.OrderID);
+        columns.AddFor(m => m.OrderDate);
+        columns.AddFor(m => m.CustomerName);
+        columns.AddFor(m => m.ShipCountry);
+        columns.AddFor(m => m.ShipCity);
+    })
+    .Paging(p => p.PageSize(10))
+    .FilterRow(f => f.Visible(true))
+    .HeaderFilter(f => f.Visible(true))
+    .RemoteOperations(true)
+    .OnRowClick("onRowClick")
+    .Selection(s => s.Mode(SelectionMode.Single))    
+    .MasterDetail(m => m
+        .Enabled(false)
+        .Template(@<text>
+            @(Html.DevExpress().WebDocumentViewer("DocumentViewer").Height("1000px"))
+            <script type="text/javascript">
+                DocumentViewer.OpenReport("InfoReport?orderId=<%- data.OrderID %>&orderDate=<%- data.OrderDate %>")
+            </script>
+        </text>)    
+    )
+)

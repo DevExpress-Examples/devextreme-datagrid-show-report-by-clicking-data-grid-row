@@ -1,0 +1,46 @@
+@using dxSampleDataGridAndReport.Models
+@using dxSampleDataGridAndReport
+@using Newtonsoft.Json;
+
+
+<link rel="stylesheet" href="~/css/viewer.part.bundle.css" />
+<script src="~/js/viewer.part.bundle.js"></script>
+
+<h2>Home</h2>
+<script>
+    function showInfo(args) {
+        $("#employee-popup").dxPopup("show");
+        DocumentViewer.OpenReport("InfoReport?orderId=" + args.data.OrderID + "&orderDate=" + args.data.OrderDate);
+    }
+</script>
+
+@(Html.DevExtreme().Popup()
+        .ID("employee-popup")
+        .Width(800)
+        .Height(800)
+        .ShowTitle(true)
+        .Title("Information")
+        .Visible(false)
+        .DragEnabled(false)
+        .CloseOnOutsideClick(true)
+        .ContentTemplate(@<text>
+            @(Html.DevExpress().WebDocumentViewer("DocumentViewer").Height("800px").Width("100%"))            
+        </text>)
+)
+@(Html.DevExtreme().DataGrid<SampleOrder>()
+    .ShowBorders(true)
+    .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
+    .Columns(columns => {
+        columns.AddFor(m => m.OrderID);
+        columns.AddFor(m => m.OrderDate);
+        columns.AddFor(m => m.CustomerName);
+        columns.AddFor(m => m.ShipCountry);
+        columns.AddFor(m => m.ShipCity);
+    })
+    .Paging(p => p.PageSize(10))
+    .RemoteOperations(true)
+    .Selection(s => s.Mode(SelectionMode.Single))
+    .OnRowClick("showInfo")
+)
+
+
