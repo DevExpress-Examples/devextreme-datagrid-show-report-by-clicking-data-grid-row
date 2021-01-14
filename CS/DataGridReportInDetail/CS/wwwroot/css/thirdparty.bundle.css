@@ -1,0 +1,26 @@
+using System.Collections.Generic;
+using DevExpress.Blazor.SeleniumUnitTests.Adapters;
+using DevExpress.Blazor.Tests.Utils;
+using OpenQA.Selenium;
+using Xunit;
+using Xunit.Abstractions;
+
+namespace DevExpress.Blazor.TagBox.Tests {
+    [Collection("SeleniumTests")]
+    public class TagBoxAllowCustomTags : TagBoxTestsBase {
+        protected override string TagBoxId => "TagBox_AllowCustomTags";
+        protected override IEnumerable<string> SelectedItemLabelIds => new List<string>();
+        protected override string NavigateUrl => "TagBox_AllowCustomTags";
+        public TagBoxAllowCustomTags(BrowserFixture browserFixture, ToggleExecutionModeServerFixture serverFixture, ITestOutputHelper output) : base(browserFixture, serverFixture, output) { }
+
+
+        [Fact]
+        public void SaveCustomTagAfterTabPressed() {
+            TagBox.Text = "CustomTag";
+            TagBox.PressKey(Keys.Tab);
+            TagBox.WaitForTagWithText("CustomTag");
+        }
+
+
+    }
+}

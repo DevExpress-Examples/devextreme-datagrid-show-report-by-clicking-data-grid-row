@@ -1,0 +1,14 @@
+﻿@page "/TagBox_AllowCustomTags"
+@inherits Scenario
+
+<DxTagBox Id="TagBox_AllowCustomTags"
+          Data="@Data"
+          TData="string"
+          TValue="string"
+          AllowCustomTags="true">
+</DxTagBox>
+
+
+@code{
+    IEnumerable<string> Data { get; set; } = new List<string>() { "1", "2", "3" };
+}
