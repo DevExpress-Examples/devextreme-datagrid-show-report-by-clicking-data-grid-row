@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dxSampleDataGridAndReportInDetail", "DataGridReportInDetail\CS\dxSampleDataGridAndReportInDetail.csproj", "{5699339A-798A-4545-9120-3EACBA761CF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dxSampleDataGridAndReportInDetail", "DataGridReportInDetail\CS\dxSampleDataGridAndReportInDetail.csproj", "{BE8DD58D-7B84-4B9B-9747-5C946D4E8B45}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dxSampleDataGridAndReportInPopup", "DataGridRowClickReportInPopup\CS\dxSampleDataGridAndReportInPopup.csproj", "{DBDFCA13-B107-4A31-B141-04811B80C855}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dxSampleDataGridAndReportInPopup", "DataGridRowClickReportInPopup\CS\dxSampleDataGridAndReportInPopup.csproj", "{CEE16FF9-4F82-49C6-BC8E-5073E214205A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dxSampleDataGridAndReport", "DataGridRowClickReportView\CS\dxSampleDataGridAndReport.csproj", "{CDB4B0D3-49B4-41E9-B9AE-5E97DCB34DF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dxSampleDataGridAndReport", "DataGridRowClickReportView\CS\dxSampleDataGridAndReport.csproj", "{C8862C0D-7B79-47A2-BBB0-BE2ABC22481E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,23 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5699339A-798A-4545-9120-3EACBA761CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5699339A-798A-4545-9120-3EACBA761CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5699339A-798A-4545-9120-3EACBA761CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5699339A-798A-4545-9120-3EACBA761CF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBDFCA13-B107-4A31-B141-04811B80C855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBDFCA13-B107-4A31-B141-04811B80C855}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBDFCA13-B107-4A31-B141-04811B80C855}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBDFCA13-B107-4A31-B141-04811B80C855}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CDB4B0D3-49B4-41E9-B9AE-5E97DCB34DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDB4B0D3-49B4-41E9-B9AE-5E97DCB34DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDB4B0D3-49B4-41E9-B9AE-5E97DCB34DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDB4B0D3-49B4-41E9-B9AE-5E97DCB34DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE8DD58D-7B84-4B9B-9747-5C946D4E8B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE8DD58D-7B84-4B9B-9747-5C946D4E8B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE8DD58D-7B84-4B9B-9747-5C946D4E8B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8DD58D-7B84-4B9B-9747-5C946D4E8B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE16FF9-4F82-49C6-BC8E-5073E214205A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE16FF9-4F82-49C6-BC8E-5073E214205A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE16FF9-4F82-49C6-BC8E-5073E214205A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE16FF9-4F82-49C6-BC8E-5073E214205A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8862C0D-7B79-47A2-BBB0-BE2ABC22481E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8862C0D-7B79-47A2-BBB0-BE2ABC22481E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8862C0D-7B79-47A2-BBB0-BE2ABC22481E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8862C0D-7B79-47A2-BBB0-BE2ABC22481E}.Release|Any CPU.Build.0 = Release|Any CPU
 		EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {825C75A0-6D68-4A1F-88B0-3E791A014A52}
+		SolutionGuid = {C5045EEE-3C5D-4398-90E3-BDA89F599A2A}
 	EndGlobalSection
 EndGlobal
