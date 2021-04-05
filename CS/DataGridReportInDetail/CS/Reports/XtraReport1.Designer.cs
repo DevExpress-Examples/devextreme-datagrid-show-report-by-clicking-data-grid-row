@@ -12,7 +12,7 @@ namespace dxSampleDataGridAndReport {
     
     public partial class XtraReport1 : DevExpress.XtraReports.UI.XtraReport {
         private void InitializeComponent() {
-            DevExpress.XtraReports.ReportInitializer reportInitializer = new DevExpress.XtraReports.ReportInitializer(this, "dxSampleDataGridAndReport.Reports.XtraReport1.vsrepx");
+            DevExpress.XtraReports.ReportInitializer reportInitializer = new DevExpress.XtraReports.ReportInitializer(this, "dxSampleDataGridAndReportInDetail.Reports.XtraReport1.vsrepx");
 
             // Controls
             this.TopMargin = reportInitializer.GetControl<DevExpress.XtraReports.UI.TopMarginBand>("TopMargin");
