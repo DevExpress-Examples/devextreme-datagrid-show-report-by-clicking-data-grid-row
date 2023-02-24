@@ -3,10 +3,10 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T957066)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Web Reporting - How to Display a Report with Details about a Clicked Data Grid Row
+
+# DevExtreme Web Reporting - How to display a report with details about a clicked DataGrid row
 
 In this example, you can click the [DevExtreme Data Grid](https://js.devexpress.com/Demos/Widgetsgallery/Demo/DataGrid/Overview/NetCore/Light/) row to create a report and display it in the [DevExpress Document Viewer](https://docs.devexpress.com/XtraReports/400248/web-reporting/asp-net-core-reporting/document-viewer). The report uses the information displayed in the row to query the data source and retrieve the details.
-
 
 ## How to Display a Report
 
@@ -30,7 +30,6 @@ Place the Document Viewer in the Data Grid [detail template](https://js.devexpre
 
 The Document Viewer uses the [ICachedReportSourceWebResolver](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.ICachedReportSourceWebResolver) service on a server to parse the `reportURL` string. The service uses this information to create a report and populate its data source. The controller passes the report instance back to the client-side  Document Viewer.
 
-  
 ## Implementation Details
 
 ### Data Grid 
