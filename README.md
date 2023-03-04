@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# DevExtreme Web Reporting - How to display a report with details about a clicked DataGrid row
+# Web Reporting for DevExtreme - How to display a report with details about a clicked DataGrid row
 
 In this example, you can click the [DevExtreme Data Grid](https://js.devexpress.com/Demos/Widgetsgallery/Demo/DataGrid/Overview/NetCore/Light/) row to create a report and display it in the [DevExpress Document Viewer](https://docs.devexpress.com/XtraReports/400248/web-reporting/asp-net-core-reporting/document-viewer). The report uses the information displayed in the row to query the data source and retrieve the details.
 
